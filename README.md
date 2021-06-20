@@ -1,4 +1,7 @@
-Spring框架理解
+# Spring 入门
+
+
+## Spring框架理解
 
 在Spring中，我们听到最多的名词是Bean。那么其实Spring就是面向Bean的编程。
 Spring里，改变了常规的依赖关系，把依赖关系转为用配置文件。 而这种机制就在一个IoC容器管理。换句话来说，IoC容器中管理这Bean的对象及他们之间的依赖关系。
@@ -154,6 +157,30 @@ DefaultListableBeanFactory.java
 * 球 = Bean实例
 * BeanFactoryPostProcessor = 在球模被造起来，可以对其修改
 * InitializingBean跟DisposableBean是开始造球和结束简单的预备扫尾工作。
+
+3.  Project Structure
+```
+* src/main/java/com.example.spring </br>
+**	HelloWorld </br>
+**	MainApp </br>
+* src/main/java/resources </br>
+**	Beans.xml </br>
+```
+引入以下library:
+```
+commin-logging
+spring-beans
+spring-context
+spring-context-support
+sprng-core
+spring-expression
+```
+运行: </br>
+```
+Your message: 
+Hello World! Your first Spring project!
+```
+
 
 3. 参考资料
 
