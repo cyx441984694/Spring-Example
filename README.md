@@ -8,7 +8,7 @@ Spring里，改变了常规的依赖关系，把依赖关系转为用配置文�
 Spring中核心组件是Core, Context和Bean。 Core理解为IoC容器，Context是协调员，负责创造建立跟协调Bean之间的关系。
 
 1. 构建Bean工厂
-
+-----------------------------------------------------
 Ioc容易实际上是Context组件结合bean组件和core组件共同构建了一个Bean关系网。
 构建的入口在ApplicationContext类中(`org.springframework.context.support.ApplicationContext`)
 ```
@@ -97,7 +97,7 @@ loadBeanDefinitions
 ```
 
 2. 创建Bean实例
-
+-------------------------------------------------
 Bean的实例化是在上面的refresh()中的finishBeanFactoryInitialization方法开始的。其中PreInstantiateSingletons方法就是解释Bean的实例化:
 ```.env
 DefaultListableBeanFactory.java
@@ -158,7 +158,9 @@ DefaultListableBeanFactory.java
 * BeanFactoryPostProcessor = 在球模被造起来，可以对其修改
 * InitializingBean跟DisposableBean是开始造球和结束简单的预备扫尾工作。
 
+
 3.  Project Structure
+--------------------------------------------------------
 ```
 * src/main/java/com.example.spring </br>
 **	HelloWorld </br>
@@ -182,7 +184,7 @@ Hello World! Your first Spring project!
 ```
 
 
-3. 参考资料
-
+4. 参考资料
+-------------------------------------------------------------
 * 《深入分析Java Web技术内幕》 * 许令波
 * https://www.tutorialspoint.com/spring/spring_hello_world_example.htm
